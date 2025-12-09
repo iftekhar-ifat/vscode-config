@@ -1,0 +1,29 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-j": "terminal_panel::Toggle",
+      "alt-q": "pane::CloseActiveItem",
+      "alt-`": "tab_switcher::Toggle",
+      "alt-q": "tab_switcher::CloseSelectedItem",
+      "alt-e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a": "project_panel::NewFile", // New file
+      "r": "project_panel::Rename", // Rename file
+      "c": "project_panel::Copy", // Copy file
+      "p": "project_panel::Paste", // Paste file
+      "d": "project_panel::Delete" // Delete file
+    }
+  }
+]
