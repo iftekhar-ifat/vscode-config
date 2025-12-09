@@ -17,13 +17,20 @@
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile", // New file
       "r": "project_panel::Rename", // Rename file
       "c": "project_panel::Copy", // Copy file
       "p": "project_panel::Paste", // Paste file
       "d": "project_panel::Delete" // Delete file
+    }
+  },
+  {
+    "context": "VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "shift-h": ["workspace::SendKeystrokes", "shift-h z z"],
+      "shift-l": ["workspace::SendKeystrokes", "shift-l z z"]
     }
   }
 ]
