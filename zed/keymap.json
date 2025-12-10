@@ -9,11 +9,10 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-j": "terminal_panel::Toggle",
-      "alt-q": "pane::CloseActiveItem",
+      "alt-e": "workspace::ToggleLeftDock",
       "alt-`": "tab_switcher::Toggle",
-      "alt-q": "tab_switcher::CloseSelectedItem",
-      "alt-e": "workspace::ToggleLeftDock"
+      "alt-j": "terminal_panel::Toggle",
+      "alt-q": "pane::CloseActiveItem"
     }
   },
   {
@@ -31,6 +30,17 @@
     "bindings": {
       "shift-h": ["workspace::SendKeystrokes", "shift-h z z"],
       "shift-l": ["workspace::SendKeystrokes", "shift-l z z"]
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "alt-q": "tab_switcher::CloseSelectedItem"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-o": "workspace::Open"
     }
   }
 ]
